@@ -3,7 +3,7 @@ import left from "../../assets/Svg/left.svg"
 import right from "../../assets/Svg/right.svg"
 function Whoweare() {
   return (
-    <div className="max-w-screen-2xl mx-auto px-20 py-24">
+    <div className="max-w-screen-2xl mx-auto px-20 py-20">
       <div className="flex flex-col justify-center items-center">
         <div>
           <h1 className="font-poppins text-[22px] font-medium text-[#F17E2D]">

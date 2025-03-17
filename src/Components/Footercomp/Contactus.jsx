@@ -79,7 +79,7 @@ function Contactus() {
             ))}
             <button
               type="submit"
-              className="w-[150px] bg-[#F17E2D] text-white py-3 font-poppins font-semibold text-"
+              className="w-[150px] bg-[#F17E2D] text-white py-3 font-poppins font-semibold cursor-pointer"
             >
               Send
             </button>

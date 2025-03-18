@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
       <div className=" mt-[600px] bg-[#2E3E4D]">
-        <div className=" max-w-screen-2xl mx-auto px-20  flex items-center justify-center relative ">
+        <div className=" max-w-screen-2xl mx-auto px-16  flex items-center justify-center relative ">
           <div className="absolute w-[90%] -translate-x-1/2 left-1/2 -top-1/3 -translate-y-1/2">
             <Contactus />
           </div>

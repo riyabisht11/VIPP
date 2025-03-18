@@ -25,7 +25,7 @@ function Founders() {
     },
   ];
   return (
-    <div className="max-w-screen-2xl mx-auto px-20 py-5">
+    <div className="max-w-screen-2xl mx-auto px-16 py-5">
       <div className="flex justify-center">
         <h1 className="font-poppins text-[#F17E2D] text-base font-normal">
           Physicians Leading Physicians

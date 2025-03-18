@@ -3,42 +3,34 @@ import logo from "../assets/Svg/logo.svg";
 
 function Header() {
   return (
-    <nav className="absolute top-4 left-0 w-full z-10 max-w-screen-2xl mx-auto px-20 flex justify-center gap-16 ">
-    <div className="one flex justify-center gap-20 py-5">
-      <div className="text-white font-roboto font-medium text-[20px] cursor-pointer">
-        <h1>About US</h1>
+    <nav className="absolute top-4 left-1/2 transform -translate-x-1/2 w-full max-w-[1600px] z-10 px-16 flex items-center justify-between">
+      
+      {/* Left Section */}
+      <div className="flex items-center gap-28 flex-1">
+        <h1 className="text-white font-roboto font-medium text-[24px] cursor-pointer whitespace-nowrap">About Us</h1>
+        <h1 className="text-white font-roboto font-medium text-[24px] cursor-pointer">Leadership</h1>
+        <h1 className="text-white font-roboto font-medium text-[24px] cursor-pointer whitespace-pre">Growth Story</h1>
       </div>
-      <div className="text-white font-roboto font-medium text-[20px] cursor-pointer">
-        <h1>Leadership</h1>
-      </div>
-      <div className="text-white font-roboto font-medium text-[20px] cursor-pointer">
-        <h1>Growth Story</h1>
-      </div>
-    </div>
 
-    <div className="logo flex flex-col justify-center items-center">
-      <img src={logo} alt="Logo" className="h-12" />
-    </div>
-
-    <div className="second flex justify-center gap-16 py-5">
-      <div className="text-white font-roboto font-medium text-[20px] cursor-pointer">
-        <h1>Why VIPP?</h1>
+      {/* Logo Section */}
+      <div className="flex justify-center flex-1">
+        <img src={logo} alt="Logo" className="h-16" />
       </div>
-      <div className="text-white font-roboto font-medium text-[20px] cursor-pointer">
-        <h1>Join Our Team</h1>
-      </div>
-     
-     
-    </div>
-    <div className="cursor-pointer py-2">
-      <button className="bg-[#F17E2D] rounded-[60px] py-3 px-8 text-white font-roboto font-medium text-[20px] cursor-pointer">
-        Contact
-      </button>
-    </div>
-    
 
-    
-  </nav>
+      {/* Right Section */}
+      <div className="flex items-center gap-28 flex-1 justify-end">
+        <h1 className="text-white font-roboto font-medium text-[24px] cursor-pointer whitespace-nowrap">Why VIPP?</h1>
+        <h1 className="text-white font-roboto font-medium text-[24px] cursor-pointer whitespace-nowrap">Join Our Team</h1>
+      </div>
+
+      {/* Contact Button */}
+      <div className="ml-8  ">
+        <button className="bg-[#F17E2D] rounded-full py-3 px-10 text-white font-roboto font-medium text-[22px] cursor-pointer shadow-lg hover:bg-[#d96d28] transition">
+          Contact
+        </button>
+      </div>
+
+    </nav>
   );
 }
 

@@ -5,6 +5,8 @@ import Founders from "../Components/Home/Founders";
 
 import GrowthStory from "../Components/Home/GrowthStory";
 import Whatsets from "../Components/Home/Whatsets";
+import Join from "../Components/Home/Join";
+import Standard from "../Components/Home/Standard";
 
 function Home() {
   return (
@@ -14,6 +16,8 @@ function Home() {
       <Founders />
       <GrowthStory />
       <Whatsets/>
+      <Standard/>
+      <Join/>
     </>
   );
 }

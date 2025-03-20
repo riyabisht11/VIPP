@@ -37,35 +37,42 @@ function Founders() {
           Our Founders
         </h1>
       </div>
+      {array.map((item, idx) => (
+  <div
+    key={idx}
+    className="flex flex-col md:flex-row py-4 xl:py-10 gap-10 xl:gap-44 items-center"
+  >
+    {/* Image First on Small Screens, Order Adjusted for Large Screens */}
+    <div
+      className={`w-full md:w-1/2 flex justify-center ${
+        idx % 2 === 0 ? "md:order-last" : "md:order-first"
+      }`}
+    >
+      <img src={item.img} alt={item.name} className="w-80 md:w-full" />
+    </div>
 
-      {array.map((item,idx) =>(
-          <div className="flex py-10 gap-44">
-            <div className={` left w-3/4 order-first
-                ${
-              idx % 2 !== 0 ? "order-last" : "order-first"
-            } `}>
-              <div>
-                <h1 className="font-poppins text-[#F17E2D] text-[30px] font-semibold">
-                {item.name}
-                </h1>
-                <h1 className="font-poppins font-normal text-[20px] text-[#515151B2]">
-                  {" "}
-                {item.des}
-                </h1>
-              </div>
-              <div>
-                <p className="py-10 max-w-[781px] font-poppins font-normal text-[20px] text-[#515151B2]/70 ">
-                  {item.cont}
-                </p>
-              </div>
-            </div>
+    {/* Text Section */}
+    <div
+      className={`w-full md:w-1/2 text-center md:text-left ${
+        idx % 2 === 0 ? "md:order-first" : "md:order-last"
+      }`}
+    >
+      <h1 className="font-poppins text-[#F17E2D] text-[24px] xl:text-[30px] font-semibold">
+        {item.name}
+      </h1>
+      <h1 className="font-poppins font-normal text-[16px] xl:text-[20px] text-[#515151B2]">
+        {item.des}
+      </h1>
+      <p className="py-6 max-w-[781px] font-poppins font-normal text-base xl:text-[20px] text-[#515151B2]/70">
+        {item.cont}
+      </p>
+    </div>
+  </div>
+))}
 
-            <div className="right size-80">
-              <img src={item.img} alt="" />
-            </div>
-          </div>
+
         
-      ))}
+ 
     </div>
   );
 }

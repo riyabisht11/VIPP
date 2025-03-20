@@ -14,7 +14,7 @@ function Hero() {
       <div className="bg-black/20 absolute inset-0 w-full h-full"></div>
 
       <main className="relative z-10 text-center ">
-        <p className="max-w-[1106px] text-white font-poppins font-normal text-[50px]">
+        <p className="max-w-[1106px] text-white font-poppins font-normal text-[24px] md:text-[30px] xl:text-[50px]">
           Join a growing healthcare organization committed to improving patient
           outcomes and physician productivity.
         </p>
@@ -25,7 +25,7 @@ function Hero() {
           </h1>
         </div>
         </main>
-      <div className="absolute bottom-[120px] left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-[150px] left-1/2 transform -translate-x-1/2">
         <img src={down} alt="Down Arrow" className="w-10 h-10 animate-bounce" />
       </div>
     </div>
